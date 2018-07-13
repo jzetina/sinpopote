@@ -8,3 +8,5 @@ Para esta página web se usan animaciones en CSS para los SVG, así como librer�
 Por implementar:
 - Animaciones para todos los elementos (según sea el caso)
 - Media queries para los demás dispositivos
+
+** Live demo: ** [https://jzetina.github.io/sinpopote/](https://jzetina.github.io/sinpopote/)
