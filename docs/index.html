@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	<!-- header tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- tab icon 
+	<link rel="shortcut icon" href="assets/img/inu.ico" /> -->
+	<!-- web name -->
+	<title>Sin Popote</title>
+	<!-- custom css -->
+	<link rel="stylesheet" href="assets/css/renew.css">
+	<!-- vendor css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+</head>
+<body>
+
+	<!-- bootstrap init -->
+	<div class="container-fluid">
+		<!-- all-text-stuff container -->
+		<div class="text-center" id="text-container">
+			<img src="assets/img/luchemos-por.svg" id="luchemos-por-container" class="mx-auto d-block" alt="Luchemos por un">
+			<img src="assets/img/mundo.svg" id="mundo-container" class="mx-auto d-block" alt="Mundo">
+			<img src="assets/img/sin-popote.svg" id="sin-popote-container" class="mx-auto d-block" alt="Sin popote">
+		</div>
+
+		<!-- floating straw svg -->
+		<img src="assets/img/straw.svg" id="straw-svg" alt="Imagen de popote en el mar">
+
+		<!-- brand logo -->
+		<a href="https://www.facebook.com/CrownCityCasinoMX/" target="_blank"><img src="assets/img/logo-crown.svg" id="logo-crown" alt="Logo Crown City"></a>
+		
+		<!-- a div with bottom fixed position -->
+		<div id="footer">
+			<!-- ocean water with ::before pseudo with waves.svg -->
+			<div id="water-container"></div>
+			<!-- turtle, starfish and dolphin with svg with animations -->
+			<img src="assets/img/turtle.svg" id="turtle" class="wow slideInLeft" data-wow-duration="10s" data-wow-delay="1s">
+			<img src="assets/img/starfish.svg" id="starfish">
+			<img src="assets/img/dolphin.svg" id="dolphin" class="wow slideInRight" data-wow-duration="5s">
+			<!-- fishes -->
+			<img src="assets/img/fish-one.svg" id="fish-one">
+			<!-- ocean bottom -->
+			<img src="assets/img/sea-bottom.svg" id="sea-bottom-container">
+		</div>
+
+		<!-- button trigger modal -->
+		<button type="button" class="btn btn-lg animated infinite pulse" id="action-button" data-toggle="modal" data-target="#ModalCenter">
+			Conoce más
+		</button>
+
+		<!-- modal -->
+		<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalCenterTitle">El popote</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h4>1 minuto para fabricarlo</h4>
+						<p>El popote es un polímero ligero que viaja desde el confort de una butaca al estómago de tortugas, mamíferos marinos y peces, entre otros organismos. Los popotes hoy amenazan los ecosistemas costeros y marinos.</p>
+
+						<h4>20 minutos de uso</h4>
+						<ul>
+							<li>&spades; En nuestra mesa dura 20 minutos y en nuestros mares 200 años. no puede biodegradarse.</li>
+							<li>&spades; El 33% del plástico se usa solo una vez y se desecha.</li>
+							<li>&spades; En México, el 95% de los popotes que se utilizan no son reciclables.</li>
+							<li>&spades; Se estima que un ser humano utiliza aproximadamente 38 mil popotes durante toda su vida.</li>
+							<li>&spades; Las aves playeras confunden el plástico con alimento y ponen su vida en peligro.</li>
+							<li>&spades; Cada vez que dice NO al uso del popote, contribuyes a tener playas y océanos más limpios y se mejora el hábitat de diferentes especies.</li>
+						</ul>
+
+						<h4>200 años para descomponerse</h4>
+
+						<p>La Secretaría de Medio Ambiente y Recursos Naturales exhortó a la población a eliminar el uso de popotes.</p>
+
+						<p>En un comunicado, estimó que si se usa ese producto con frecuencia, una persona habrá consumido alrededor de 38 mil popotes durante toda su vida, la mayoría de los cuales terminarán en rellenos sanitarios o serán arrastrados al ambiente contaminando suelo, ríos y mares. “Todos podemos contribuir al cuidado del medio ambiente eliminando el hábito de usar popote”, puntualizó.</p>
+
+						<h4>1000 muertes de especies marinas</h4>
+
+						<p>Las impactantes imágenes han demostrado el efecto que el plástico provoca en la vida marina.  se estima que cada año al menos un millón de aves marinas, 100 mil mamíferos marinos y tortugas marinas mueren cuando se enredan o ingieren la contaminación plástica.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- vendor scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/anime.min.js"></script>
+	<!-- custom js & live reload -->
+	<script src="assets/js/app.js"></script>
+	<script>new WOW().init();</script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>
