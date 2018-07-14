@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/shepherd.css">
 </head>
 <body>
 
@@ -24,7 +25,7 @@
 		<div class="text-center" id="text-container">
 			<img src="assets/img/luchemos-por.svg" id="luchemos-por-container" class="mx-auto d-block" alt="Luchemos por un">
 			<img src="assets/img/mundo.svg" id="mundo-container" class="mx-auto d-block" alt="Mundo">
-			<img src="assets/img/sin-popote.svg" id="sin-popote-container" class="mx-auto d-block" alt="Sin popote">
+			<img src="assets/img/sin-popote.svg" id="sin-popote-container" class="mx-auto d-block straw" alt="Sin popote">
 		</div>
 
 		<!-- floating straw svg -->
@@ -37,18 +38,34 @@
 		<div id="footer">
 			<!-- ocean water with ::before pseudo with waves.svg -->
 			<div id="water-container"></div>
-			<!-- turtle, starfish and dolphin with svg with animations -->
-			<img src="assets/img/turtle.svg" id="turtle" class="wow slideInLeft" data-wow-duration="10s" data-wow-delay="1s">
+			<!-- turtle, starfish and dolphin with svg animations -->
+			<img src="assets/img/turtle.svg" id="turtle" class="wow slideInLeft turtle" data-wow-duration="10s" data-wow-delay="1s">
 			<img src="assets/img/starfish.svg" id="starfish">
 			<img src="assets/img/dolphin.svg" id="dolphin" class="wow slideInRight" data-wow-duration="5s">
 			<!-- fishes -->
-			<img src="assets/img/fish-one.svg" id="fish-one">
+			<img src="assets/img/fish-one.svg" id="fish-one" class="wow slideInRight" data-wow-duration="5s" data-wow-delay="3s">
+			<img src="assets/img/fish-two.svg" id="fish-two-a" class="wow slideInLeft" data-wow-duration="5s" data-wow-delay="1s">
+			<img src="assets/img/fish-two.svg" id="fish-two-b" class="wow slideInLeft" data-wow-duration="5s" data-wow-delay="1s">
+			<img src="assets/img/fish-two.svg" id="fish-two-c" class="wow slideInLeft" data-wow-duration="5s" data-wow-delay="1s">
+			<img src="assets/img/fish-one.svg" id="fish-three-a" class="wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+			<img src="assets/img/fish-one.svg" id="fish-three-b" class="wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+			<!-- seaweed group one -->
+			<img src="assets/img/seaweed-one.svg" id="seaweed-one-a">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-one-b">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-one-c">
+			<!-- seaweed group two -->
+			<img src="assets/img/seaweed-one.svg" id="seaweed-two-a">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-two-b">
+			<!-- seaweed group three -->
+			<img src="assets/img/seaweed-one.svg" id="seaweed-three-a">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-three-b">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-three-c">
 			<!-- ocean bottom -->
 			<img src="assets/img/sea-bottom.svg" id="sea-bottom-container">
 		</div>
 
 		<!-- button trigger modal -->
-		<button type="button" class="btn btn-lg animated infinite pulse" id="action-button" data-toggle="modal" data-target="#ModalCenter">
+		<button type="button" class="btn btn-lg animated infinite pulse" id="action-button" onclick="tour.start()">
 			Conoce más
 		</button>
 
@@ -63,19 +80,6 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<h4>1 minuto para fabricarlo</h4>
-						<p>El popote es un polímero ligero que viaja desde el confort de una butaca al estómago de tortugas, mamíferos marinos y peces, entre otros organismos. Los popotes hoy amenazan los ecosistemas costeros y marinos.</p>
-
-						<h4>20 minutos de uso</h4>
-						<ul>
-							<li>&spades; En nuestra mesa dura 20 minutos y en nuestros mares 200 años. no puede biodegradarse.</li>
-							<li>&spades; El 33% del plástico se usa solo una vez y se desecha.</li>
-							<li>&spades; En México, el 95% de los popotes que se utilizan no son reciclables.</li>
-							<li>&spades; Se estima que un ser humano utiliza aproximadamente 38 mil popotes durante toda su vida.</li>
-							<li>&spades; Las aves playeras confunden el plástico con alimento y ponen su vida en peligro.</li>
-							<li>&spades; Cada vez que dice NO al uso del popote, contribuyes a tener playas y océanos más limpios y se mejora el hábitat de diferentes especies.</li>
-						</ul>
-
 						<h4>200 años para descomponerse</h4>
 
 						<p>La Secretaría de Medio Ambiente y Recursos Naturales exhortó a la población a eliminar el uso de popotes.</p>
@@ -92,15 +96,14 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<!-- vendor scripts -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="assets/js/wow.min.js"></script>
-	<script src="assets/js/anime.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.min.js" integrity="sha384-uDKW6sIHqqcPiyccJrLMW2OiOB7L186E5UweSqFyDcqS9Q6SiT9nHw+XyWBAu3ZV" crossorigin="anonymous"></script>
+	<script src="https://shipshapecode.github.io/shepherd/dist/js/shepherd.js" integrity="sha384-JLTqZgWxEKTd8UFmq5QgpsT+j1m21075u+CampN2ZOaWq7YAXBywV+Al23zVCmMe" crossorigin="anonymous"></script>
 	<!-- custom js & live reload -->
 	<script src="assets/js/app.js"></script>
 	<script>new WOW().init();</script>
