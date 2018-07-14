@@ -1,7 +1,61 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 26.7 39.8" style="enable-background:new 0 0 26.7 39.8;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#005772;}
+	.st0 {
+		fill: #16827C;
+	}
+
+	/*.st0 {
+		-webkit-animation: seaweed 4s ease-in-out infinite;
+				animation: seaweed 4s ease-in-out infinite;
+		animation-direction: reverse;
+	}
+
+	@-webkit-keyframes seaweed {
+		0% {
+			-webkit-transform-origin: center;
+					transform-origin: center;
+			-webkit-transform: rotate(20deg) skewX(20deg);
+					transform: rotate(20deg) skewX(20deg);
+		}
+
+		50% {
+			-webkit-transform-origin: center;
+					transform-origin: center;
+			-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
+		}
+
+		100% {
+			-webkit-transform-origin: center;
+					transform-origin: center;
+			-webkit-transform: rotate(20deg) skewX(20deg);
+					transform: rotate(20deg) skewX(20deg);
+		}
+	}
+
+	@keyframes seaweed {
+		0% {
+			-webkit-transform-origin: center;
+					transform-origin: center;
+			-webkit-transform: rotate(20deg) skewX(20deg);
+					transform: rotate(20deg) skewX(20deg);
+		}
+
+		50% {
+			-webkit-transform-origin: center;
+					transform-origin: center;
+			-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
+		}
+
+		100% {
+			-webkit-transform-origin: center;
+					transform-origin: center;
+			-webkit-transform: rotate(20deg) skewX(20deg);
+					transform: rotate(20deg) skewX(20deg);
+		}
+	}*/
 </style>
 <path class="st0" d="M0.6,9.8C1,9.4,1.5,9.5,2,9.8c0.4,0.3,0.8,0.3,1.2-0.2C3.3,9.3,3.6,9.3,4,9.4c0.8,0.3,1.2,0.9,1.4,1.7
 	c0.1,0.5,0.2,0.9,0.3,1.4C5.7,12.8,5.8,13,6.1,13c0.6,0,0.9,0.4,1.1,0.9c0.3,0.7,0.3,1.4-0.1,2c-0.5,1.1-0.4,1.8,0.4,2.4

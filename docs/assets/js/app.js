@@ -1,7 +1,68 @@
-/* animes ({
-	targets: '.st2',
-	d: [ 'M76.5,51.7l11.8,3.8c0.1,0.5,0.2,1.3,0.1,2.3c-0.2,7.6-6.8,12.7-8.1,13.7c-2.8,2.1-5.3,2.9-9.2,4.2c-2.8,0.9-5.1,1.3-9.5,2.1c-11.5,2-15.3,1.4-18.1,0.7c-1-0.3-1.8-0.6-2.3-0.7c0-0.3,0-0.6,0.1-1c0.3-0.9,1-1.3,1.7-1.9c0.6-0.4,1.3-1.1,2.1-2.2c0.6-0.2,1.4-0.6,2.5-0.9c2.2-0.7,2.6-0.6,3.7-1.2c1.1-0.6,1.1-0.9,2.8-2c0.9-0.6,1.7-1,2.2-1.3c0.4-0.2,1-0.5,1.8-0.8c1.4-0.5,2-0.5,2.7-1c0.5-0.4,0.5-0.6,1.1-1.6c0.5-0.8,0.9-1.4,1.9-2.6c1.6-2,3.3-3.5,3.8-4C70.9,54.1,74.6,52.5,76.5,51.7z' ],
-	easing: 'linear',
-	duration: 2000,
-	loop: true
-}); */
+let tour = new Shepherd.Tour({
+  defaults: {
+    classes: 'shepherd-theme-arrows',
+  }
+});
+
+tour.addStep('el-popote', {
+  title: '1 Minuto Para Fabricar Un Popote',
+  text: 'El popote es un polímero ligero que viaja desde <br>el confort de una butaca al estómago de tortugas, <br>mamíferos marinos y peces, entre otros organismos. <br>Los popotes amenazan los ecosistemas costeros y marinos.',
+  attachTo: '#sin-popote-container right',
+  advanceOn: '#turtle click',
+  buttons: [
+    { 
+      text: 'Siguiente',
+      action: tour.next
+    }
+  ]
+});
+
+tour.addStep('promedio-uso', {
+  title: 'Tienen Un Promedio De Uso De 20 Minutos',
+  text: '<ul><li>&spades; El 33% del plástico se usa solo una vez y se desecha.</li><li>&spades; En México, el 95% de los popotes que se <br>utilizan no son reciclables.</li></li><li>&spades; Las aves playeras confunden el plástico con alimento <br>y ponen su vida en peligro.</li><li>&spades; Cada vez que dice NO al uso del popote, contribuyes a <br>tener playas y océanos más limpios y se mejora el <br>hábitat de diferentes especies.</li>',
+  attachTo: '#turtle top',
+  advanceOn: '#dolphin click',
+  buttons: [
+    {
+      text: 'Anterior',
+      action: tour.back
+    },
+    { 
+      text: 'Siguiente',
+      action: tour.next
+    }
+  ]
+});
+
+tour.addStep('200-descomponerse', {
+  title: '200 Años Para Descomponerse',
+  text: 'Si se usa con frecuencia, una persona <br>habrá consumido alrededor de 38 mil <br>popotes durante toda su vida, la mayoría <br>de los cuales terminarán en rellenos <br>sanitarios o serán arrastrados al ambiente <br>contaminando suelo, ríos y mares.',
+  attachTo: '#dolphin left',
+  advanceOn: '#fish-two-a click',
+  buttons: [
+    {
+      text: 'Anterior',
+      action: tour.back
+    },
+    { 
+      text: 'Siguiente',
+      action: tour.next
+    }
+  ]
+});
+
+tour.addStep('100K-muertes', {
+  title: 'Más De 100 Mil Muertes De Especies Marinas',
+  text: 'Las impactantes imágenes han demostrado <br>el efecto que el plástico provoca en la vida marina. <br>Se estima que cada año al menos un millón <br>de aves marinas, 100 mil mamíferos marinos y <br>tortugas marinas mueren cuando se enredan <br>o ingieren la contaminación plástica.',
+  attachTo: '#fish-two-a top',
+  buttons: [
+    {
+      text: 'Anterior',
+      action: tour.back
+    },
+    { 
+      text: 'Cerrar',
+      action: tour.complete
+    }
+  ]
+});

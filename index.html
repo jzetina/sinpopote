@@ -1,3 +1,36 @@
+<!--
+
+/* TEAM */
+
+Web Developer: Jorge Zetina
+Website: jorgezetina.com
+Business: inu.mx
+Projects: https://github.com/jzetina
+Twitter: @jzetina_
+Location: Villahermosa, Tabasco, MX
+
+Graphic Designer: Fabiola Bermúdez
+
+/* WEBSITE */
+
+Last update: July 13th, 2018            
+Standards: HTML5, CSS3, JavaScript                            
+Components: Animate.css, WOW.js, Bootstrap, Shepherd, jQuery, Popper
+Software: SublimeText, Photoshop, Illustrator
+
+/* THANKS */
+
+To all those people who share their knowledge :)
+
+/* LICENSE */
+
+This website is under a MIT License (https://choosealicense.com/licenses/mit/),
+which basically means you can do whatever you want, althought it would be nice
+if you keep this text in your web. Let me know via twitter if your learned
+something because of my little contribution!
+
+-->
+
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
@@ -10,10 +43,9 @@
 	<!-- web name -->
 	<title>Sin Popote</title>
 	<!-- custom css -->
-	<link rel="stylesheet" href="assets/css/renew.css">
+	<link rel="stylesheet" href="assets/css/app.css">
 	<!-- vendor css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/shepherd.css">
 </head>
@@ -25,7 +57,7 @@
 		<div class="text-center" id="text-container">
 			<img src="assets/img/luchemos-por.svg" id="luchemos-por-container" class="mx-auto d-block" alt="Luchemos por un">
 			<img src="assets/img/mundo.svg" id="mundo-container" class="mx-auto d-block" alt="Mundo">
-			<img src="assets/img/sin-popote.svg" id="sin-popote-container" class="mx-auto d-block straw" alt="Sin popote">
+			<img src="assets/img/sin-popote.svg" id="sin-popote-container" class="mx-auto d-block" alt="Sin popote">
 		</div>
 
 		<!-- floating straw svg -->
@@ -39,7 +71,7 @@
 			<!-- ocean water with ::before pseudo with waves.svg -->
 			<div id="water-container"></div>
 			<!-- turtle, starfish and dolphin with svg animations -->
-			<img src="assets/img/turtle.svg" id="turtle" class="wow slideInLeft turtle" data-wow-duration="10s" data-wow-delay="1s">
+			<img src="assets/img/turtle.svg" id="turtle" class="wow slideInLeft" data-wow-duration="10s" data-wow-delay="1s">
 			<img src="assets/img/starfish.svg" id="starfish">
 			<img src="assets/img/dolphin.svg" id="dolphin" class="wow slideInRight" data-wow-duration="5s">
 			<!-- fishes -->
@@ -64,38 +96,10 @@
 			<img src="assets/img/sea-bottom.svg" id="sea-bottom-container">
 		</div>
 
-		<!-- button trigger modal -->
+		<!-- triggers shepherd tour -->
 		<button type="button" class="btn btn-lg animated infinite pulse" id="action-button" onclick="tour.start()">
 			Conoce más
 		</button>
-
-		<!-- modal -->
-		<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="modalCenterTitle">El popote</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<h4>200 años para descomponerse</h4>
-
-						<p>La Secretaría de Medio Ambiente y Recursos Naturales exhortó a la población a eliminar el uso de popotes.</p>
-
-						<p>En un comunicado, estimó que si se usa ese producto con frecuencia, una persona habrá consumido alrededor de 38 mil popotes durante toda su vida, la mayoría de los cuales terminarán en rellenos sanitarios o serán arrastrados al ambiente contaminando suelo, ríos y mares. “Todos podemos contribuir al cuidado del medio ambiente eliminando el hábito de usar popote”, puntualizó.</p>
-
-						<h4>1000 muertes de especies marinas</h4>
-
-						<p>Las impactantes imágenes han demostrado el efecto que el plástico provoca en la vida marina.  se estima que cada año al menos un millón de aves marinas, 100 mil mamíferos marinos y tortugas marinas mueren cuando se enredan o ingieren la contaminación plástica.</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<!-- vendor scripts -->

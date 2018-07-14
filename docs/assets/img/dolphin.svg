@@ -5,26 +5,56 @@
 		fill: #16827C;
 	}
 
-	.st2 {
-		animation: fin 2s ease-in-out infinite;
+	/*.st2 {
+		-webkit-animation: fin 2s ease-in-out infinite;
+				animation: fin 2s ease-in-out infinite;
+	}
+
+	@-webkit-keyframes fin {
+		0% {
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+					transform: rotate(0deg) translateX(0px) translateY(0px);
+		}
+
+		50% {
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(-10deg) translateX(-6px) translateY(8px);
+					transform: rotate(-10deg) translateX(-6px) translateY(8px);
+		}
+
+		100% {
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+					transform: rotate(0deg) translateX(0px) translateY(0px);
+		}
 	}
 
 	@keyframes fin {
-			0% {
-				transform-origin: left;
-				transform: rotate(0deg) translateX(0px) translateY(0px);
-			}
-
-			50% {
-				transform-origin: left;
-				transform: rotate(-10deg) translateX(-6px) translateY(8px);
-			}
-
-			100% {
-				transform-origin: left;
-				transform: rotate(0deg) translateX(0px) translateY(0px);
-			}
+		0% {
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+					transform: rotate(0deg) translateX(0px) translateY(0px);
 		}
+
+		50% {
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(-10deg) translateX(-6px) translateY(8px);
+					transform: rotate(-10deg) translateX(-6px) translateY(8px);
+		}
+
+		100% {
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+					transform: rotate(0deg) translateX(0px) translateY(0px);
+		}
+	}*/
 </style>
 <g id="body">
 	<path class="st0" d="M217.6,75.8c0.2-2.6-2.2-4.8-3.5-5.9c-5.1-4.4-10.4-7.3-13.4-9.1c-2.7-1.6-6.3-4.1-10.4-7.9

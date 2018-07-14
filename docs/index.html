@@ -1,3 +1,36 @@
+<!--
+
+/* TEAM */
+
+Web Developer: Jorge Zetina
+Website: jorgezetina.com
+Business: inu.mx
+Projects: https://github.com/jzetina
+Twitter: @jzetina_
+Location: Villahermosa, Tabasco, MX
+
+Graphic Designer: Fabiola Bermúdez
+
+/* WEBSITE */
+
+Last update: July 13th, 2018            
+Standards: HTML5, CSS3, JavaScript                            
+Components: Animate.css, WOW.js, Bootstrap, Shepherd, jQuery, Popper
+Software: SublimeText, Photoshop, Illustrator
+
+/* THANKS */
+
+To all those people who share their knowledge :)
+
+/* LICENSE */
+
+This website is under a MIT License (https://choosealicense.com/licenses/mit/),
+which basically means you can do whatever you want, althought it would be nice
+if you keep this text in your web. Let me know via twitter if your learned
+something because of my little contribution!
+
+-->
+
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
@@ -10,11 +43,11 @@
 	<!-- web name -->
 	<title>Sin Popote</title>
 	<!-- custom css -->
-	<link rel="stylesheet" href="assets/css/renew.css">
+	<link rel="stylesheet" href="assets/css/app.css">
 	<!-- vendor css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/shepherd.css">
 </head>
 <body>
 
@@ -37,70 +70,44 @@
 		<div id="footer">
 			<!-- ocean water with ::before pseudo with waves.svg -->
 			<div id="water-container"></div>
-			<!-- turtle, starfish and dolphin with svg with animations -->
+			<!-- turtle, starfish and dolphin with svg animations -->
 			<img src="assets/img/turtle.svg" id="turtle" class="wow slideInLeft" data-wow-duration="10s" data-wow-delay="1s">
 			<img src="assets/img/starfish.svg" id="starfish">
 			<img src="assets/img/dolphin.svg" id="dolphin" class="wow slideInRight" data-wow-duration="5s">
 			<!-- fishes -->
-			<img src="assets/img/fish-one.svg" id="fish-one">
+			<img src="assets/img/fish-one.svg" id="fish-one" class="wow slideInRight" data-wow-duration="5s" data-wow-delay="3s">
+			<img src="assets/img/fish-two.svg" id="fish-two-a" class="wow slideInLeft" data-wow-duration="5s" data-wow-delay="1s">
+			<img src="assets/img/fish-two.svg" id="fish-two-b" class="wow slideInLeft" data-wow-duration="5s" data-wow-delay="1s">
+			<img src="assets/img/fish-two.svg" id="fish-two-c" class="wow slideInLeft" data-wow-duration="5s" data-wow-delay="1s">
+			<img src="assets/img/fish-one.svg" id="fish-three-a" class="wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+			<img src="assets/img/fish-one.svg" id="fish-three-b" class="wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+			<!-- seaweed group one -->
+			<img src="assets/img/seaweed-one.svg" id="seaweed-one-a">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-one-b">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-one-c">
+			<!-- seaweed group two -->
+			<img src="assets/img/seaweed-one.svg" id="seaweed-two-a">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-two-b">
+			<!-- seaweed group three -->
+			<img src="assets/img/seaweed-one.svg" id="seaweed-three-a">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-three-b">
+			<img src="assets/img/seaweed-two.svg" id="seaweed-three-c">
 			<!-- ocean bottom -->
 			<img src="assets/img/sea-bottom.svg" id="sea-bottom-container">
 		</div>
 
-		<!-- button trigger modal -->
-		<button type="button" class="btn btn-lg animated infinite pulse" id="action-button" data-toggle="modal" data-target="#ModalCenter">
+		<!-- triggers shepherd tour -->
+		<button type="button" class="btn btn-lg animated infinite pulse" id="action-button" onclick="tour.start()">
 			Conoce más
 		</button>
-
-		<!-- modal -->
-		<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="modalCenterTitle">El popote</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<h4>1 minuto para fabricarlo</h4>
-						<p>El popote es un polímero ligero que viaja desde el confort de una butaca al estómago de tortugas, mamíferos marinos y peces, entre otros organismos. Los popotes hoy amenazan los ecosistemas costeros y marinos.</p>
-
-						<h4>20 minutos de uso</h4>
-						<ul>
-							<li>&spades; En nuestra mesa dura 20 minutos y en nuestros mares 200 años. no puede biodegradarse.</li>
-							<li>&spades; El 33% del plástico se usa solo una vez y se desecha.</li>
-							<li>&spades; En México, el 95% de los popotes que se utilizan no son reciclables.</li>
-							<li>&spades; Se estima que un ser humano utiliza aproximadamente 38 mil popotes durante toda su vida.</li>
-							<li>&spades; Las aves playeras confunden el plástico con alimento y ponen su vida en peligro.</li>
-							<li>&spades; Cada vez que dice NO al uso del popote, contribuyes a tener playas y océanos más limpios y se mejora el hábitat de diferentes especies.</li>
-						</ul>
-
-						<h4>200 años para descomponerse</h4>
-
-						<p>La Secretaría de Medio Ambiente y Recursos Naturales exhortó a la población a eliminar el uso de popotes.</p>
-
-						<p>En un comunicado, estimó que si se usa ese producto con frecuencia, una persona habrá consumido alrededor de 38 mil popotes durante toda su vida, la mayoría de los cuales terminarán en rellenos sanitarios o serán arrastrados al ambiente contaminando suelo, ríos y mares. “Todos podemos contribuir al cuidado del medio ambiente eliminando el hábito de usar popote”, puntualizó.</p>
-
-						<h4>1000 muertes de especies marinas</h4>
-
-						<p>Las impactantes imágenes han demostrado el efecto que el plástico provoca en la vida marina.  se estima que cada año al menos un millón de aves marinas, 100 mil mamíferos marinos y tortugas marinas mueren cuando se enredan o ingieren la contaminación plástica.</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
 	</div>
 
 	<!-- vendor scripts -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="assets/js/wow.min.js"></script>
-	<script src="assets/js/anime.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.min.js" integrity="sha384-uDKW6sIHqqcPiyccJrLMW2OiOB7L186E5UweSqFyDcqS9Q6SiT9nHw+XyWBAu3ZV" crossorigin="anonymous"></script>
+	<script src="https://shipshapecode.github.io/shepherd/dist/js/shepherd.js" integrity="sha384-JLTqZgWxEKTd8UFmq5QgpsT+j1m21075u+CampN2ZOaWq7YAXBywV+Al23zVCmMe" crossorigin="anonymous"></script>
 	<!-- custom js & live reload -->
 	<script src="assets/js/app.js"></script>
 	<script>new WOW().init();</script>

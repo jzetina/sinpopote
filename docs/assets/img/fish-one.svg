@@ -5,26 +5,56 @@
 		fill:#16827C;
 	}
 
-	.st1 {
-		animation: tail 3s ease-in-out infinite;
+	/*.st1 {
+		-webkit-animation: tail 3s ease-in-out infinite;
+				animation: tail 3s ease-in-out infinite;
+	}
+
+	@-webkit-keyframes tail {
+		0% {
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(-3deg) translateX(-2px) translateY(1px);
+					transform: rotate(-3deg) translateX(-2px) translateY(1px);
+		}
+
+		50% {
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(0deg) translateX(0px);
+					transform: rotate(0deg) translateX(0px);
+		}
+
+		100% {
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(-3deg) translateX(-2px) translateY(1px);
+					transform: rotate(-3deg) translateX(-2px) translateY(1px);
+		}
 	}
 
 	@keyframes tail {
 		0% {
-			transform-origin: left;
-			transform: rotate(-3deg) translateX(-2px) translateY(1px);
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(-3deg) translateX(-2px) translateY(1px);
+					transform: rotate(-3deg) translateX(-2px) translateY(1px);
 		}
 
 		50% {
-			transform-origin: left;
-			transform: rotate(0deg) translateX(0px);
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(0deg) translateX(0px);
+					transform: rotate(0deg) translateX(0px);
 		}
 
 		100% {
-			transform-origin: left;
-			transform: rotate(-3deg) translateX(-2px) translateY(1px);
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			-webkit-transform: rotate(-3deg) translateX(-2px) translateY(1px);
+					transform: rotate(-3deg) translateX(-2px) translateY(1px);
 		}
-	}
+	}*/
 </style>
 <g id="body">
 	<path class="st0" d="M19,9.9c-0.1-0.1-0.2-0.1-0.2-0.2c0-0.1,0-0.3,0.1-0.4C19,9.1,19.1,9,19.2,9c0.1-0.1,0.2-0.2,0.2-0.3

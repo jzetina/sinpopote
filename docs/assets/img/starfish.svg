@@ -5,20 +5,41 @@
 <style type="text/css">
 	.st0{
 		fill: #16827C;
-		animation: starfish 4s ease-in-out infinite;
+		-webkit-animation: starfish 4s ease-in-out infinite;
+				animation: starfish 4s ease-in-out infinite;
+	}
+
+	@-webkit-keyframes starfish {
+		0% {
+			-webkit-transform: rotate(8deg);
+					transform: rotate(8deg);
+		}
+
+		50% {
+			-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
+		}
+
+		100% {
+			-webkit-transform: rotate(8deg);
+					transform: rotate(8deg);
+		}
 	}
 
 	@keyframes starfish {
 		0% {
-			transform: rotate(8deg);
+			-webkit-transform: rotate(8deg);
+					transform: rotate(8deg);
 		}
 
 		50% {
-			transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
 		}
 
 		100% {
-			transform: rotate(8deg);
+			-webkit-transform: rotate(8deg);
+					transform: rotate(8deg);
 		}
 	}
 </style>
