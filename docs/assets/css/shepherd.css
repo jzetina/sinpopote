@@ -142,3 +142,36 @@
   .shepherd-theme-arrows .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-button-secondary {
     background: #eeeeee;
     color: #888888; }
+
+/* MEDIA QUERIES */
+
+/* smartphones mobiles (portrait) */
+@media (min-width: 319.9px) and (max-width: 480px) {
+  .shepherd-theme-arrows .shepherd-content {
+    font-size: 0.7em;
+    line-height: 1em;
+    padding: 0em;
+  }
+
+  .shepherd-theme-arrows .shepherd-content header a.shepherd-cancel-link {
+    font-size: 1.1em;
+    line-height: 0.5em;
+  }
+
+  .shepherd-theme-arrows .shepherd-content .shepherd-text p {
+    line-height: 1.2em;
+  }
+
+  .shepherd-text {
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+
+  .shepherd-theme-arrows .shepherd-content footer .shepherd-buttons li .shepherd-button {
+    font-size: 0.85em;
+    letter-spacing: 0em;
+    line-height: 1.1em;
+    padding: 0.75em 0.5em;
+    margin-top: 0.2em;
+  }
+}

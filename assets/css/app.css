@@ -357,3 +357,155 @@ canvas {
 				transform: translateX(-40px);
 	}
 }
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* smartphones mobiles (portrait) */
+@media (min-width: 319.9px) and (max-width: 480px) {
+	#text-container {
+		padding-top: 1.5em;
+	}
+
+	#luchemos-por-container {
+		width: 75%;
+	}
+
+	#mundo-container {
+		width: 85%;
+	}
+
+	#sin-popote-container {
+		width: 70%;
+	}
+
+	#straw-svg {
+		height: 80vh;
+		right: 2em;
+	}
+
+	#logo-crown {
+		visibility: hidden;
+	}
+
+	#action-button {
+		left: 2.4em;
+		top: 57%;
+		width: 70%;
+	}
+
+	#water-container {
+		left: -40px;
+		position: fixed;
+		width: 150%;
+	}
+
+	#water-container::before {
+	    left: -5em;
+	    top: -6.1em;
+	    width: 200%;
+	}
+
+	#turtle {
+		left: -3em;
+		top: 4.3em;
+		width: 50%;
+	}
+
+	#starfish {
+		bottom: -1em;
+		left: 5em;
+		width: 13%;
+	}
+
+	#dolphin {
+		right: -6em;
+		top: 6em;
+		width: 60%;
+	}
+
+	#fish-one {
+		left: 7em;
+		top: 3em;
+		width: 12%;
+	}
+
+	#fish-two-a {
+		bottom: 4em;
+		left: 9em;
+		width: 15%;
+	}
+
+	#fish-two-b {
+		bottom: 3.2em;
+		left: 8em;
+		width: 12%;
+	}
+
+	#fish-two-c {
+		bottom: 2.7em;
+		left: 10.5em;
+		width: 10%;
+	}
+
+	#fish-three-a {
+		right: 5em;
+		top: 4em;
+		width: 8%;
+	}
+
+	#fish-three-b {
+		right: 4em;
+		top: 5em;
+		width: 7%;
+	}
+
+	#seaweed-one-a {
+		bottom: -0.5em;
+		left: 2em;
+		width: 10%;
+	}
+
+	#seaweed-one-b {
+		bottom: -1em;
+		left: 1.7em;
+		width: 6%;
+	}
+
+	#seaweed-one-c {
+		bottom: -1.2em;
+		left: 2.8em;
+		width: 7%;
+	}
+
+	#seaweed-two-a {
+		bottom: -0.5em;
+		left: 9em;
+		width: 9%;
+	}
+
+	#seaweed-two-b {
+		bottom: -0.3em;
+		left: 10em;
+		width: 6%;
+	}
+
+	#seaweed-three-a {
+		bottom: -0.9em;
+		left: 15.5em;
+		width: 9%;
+	}
+
+	#seaweed-three-b {
+		bottom: -0.2em;
+		left: 15.2em;
+		width: 4%;
+	}
+
+	#seaweed-three-c {
+		bottom: -0.2em;
+		left: 16.6em;
+		width: 4%;
+	}
+}
