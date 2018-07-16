@@ -148,18 +148,18 @@
 /* smartphones mobiles (portrait) */
 @media (min-width: 319.9px) and (max-width: 480px) {
   .shepherd-theme-arrows .shepherd-content {
-    font-size: 0.7em;
+    font-size: 0.6em;
     line-height: 1em;
     padding: 0em;
   }
 
   .shepherd-theme-arrows .shepherd-content header a.shepherd-cancel-link {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 0.5em;
   }
 
   .shepherd-theme-arrows .shepherd-content .shepherd-text p {
-    line-height: 1.2em;
+    line-height: 1.1em;
   }
 
   .shepherd-text {
@@ -168,10 +168,42 @@
   }
 
   .shepherd-theme-arrows .shepherd-content footer .shepherd-buttons li .shepherd-button {
-    font-size: 0.85em;
+    font-size: 0.75em;
     letter-spacing: 0em;
-    line-height: 1.1em;
-    padding: 0.75em 0.5em;
+    line-height: 1em;
+    padding: 0.75em 0.3em;
     margin-top: 0.2em;
   }
+}
+
+/*desktops - higher resolution*/
+@media (min-width: 2560px) {
+    .shepherd-theme-arrows .shepherd-content {
+      font-size: 2em;
+      line-height: 1em;
+      padding: 0em;
+    }
+
+    .shepherd-theme-arrows .shepherd-content header a.shepherd-cancel-link {
+      font-size: 1em;
+      line-height: 0.5em;
+    }
+
+    .shepherd-theme-arrows .shepherd-content .shepherd-text p {
+      line-height: 1.1em;
+      font-size: 1em;
+    }
+
+    .shepherd-text {
+      padding-top: 0em;
+      padding-bottom: 0em;
+    }
+
+    .shepherd-theme-arrows .shepherd-content footer .shepherd-buttons li .shepherd-button {
+      font-size: 0.75em;
+      letter-spacing: 0em;
+      line-height: 1em;
+      padding: 0.75em 0.3em;
+      margin-top: 0.2em;
+    }
 }
